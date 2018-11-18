@@ -6,7 +6,7 @@
 import UIKit
 
 class MainViewController: UIViewController {
-  let tableView = UITableView(frame: CGRect.zero, style: .plain)
+  @IBOutlet weak var tableView: UITableView!
   
   var contents: [String] = [];
   
@@ -15,6 +15,9 @@ class MainViewController: UIViewController {
     
     tableView.delegate = self
     tableView.dataSource = self
+    
+    tableView.register(UINib(nibName: "MainPhotoTabelViewCell", bundle: nil),
+                       forCellReuseIdentifier: "MainPhoto")
   }
 }
 
@@ -28,7 +31,8 @@ extension MainViewController: UITableViewDataSource {
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    return UITableViewCell()
+    let cell = tableView.dequeueReusableCell(withIdentifier: "MainPhotoTabelViewCell", for: indexPath)
+    return cell
   }
 }
 
