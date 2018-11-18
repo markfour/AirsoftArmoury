@@ -13,7 +13,7 @@ class MainViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    tableView.register(UINib(nibName: "MainPhotoTabelViewCell", bundle: nil),
+    tableView.register(UINib(nibName: "MainPhotoTableViewCell", bundle: nil),
                        forCellReuseIdentifier: "MainPhoto")
     
     contents = ["", "", "", ""]
@@ -31,7 +31,7 @@ extension MainViewController: UITableViewDataSource {
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: "MainPhoto", for: indexPath)
-      as! MainPhotoTabelViewCell
+      as! MainPhotoTableViewCell
     return cell
   }
 }

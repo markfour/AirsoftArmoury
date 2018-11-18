@@ -1,10 +1,10 @@
 //
-//  MainPhotoTabelViewCell.swift
+//  MainPhotoTableViewCell.swift
 //  AirosftArmoury
 //
 
 import UIKit
 
-class MainPhotoTabelViewCell: UITableViewCell {
+class MainPhotoTableViewCell: UITableViewCell {
   
 }
