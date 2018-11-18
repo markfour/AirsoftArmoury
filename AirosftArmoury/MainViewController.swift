@@ -12,9 +12,7 @@ class MainViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
-    navigationController?.navigationBar.tintColor = .white
-    
+        
     tableView.register(UINib(nibName: "MainPhotoTabelViewCell", bundle: nil),
                        forCellReuseIdentifier: "MainPhoto")
   }
