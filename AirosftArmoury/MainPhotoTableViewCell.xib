@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="uc4-tr-9Nm">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="140"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uc4-tr-9Nm" id="wpM-wk-Liu" customClass="MainPhotoTabelViewCell" customModule="AirosftArmoury" customModuleProvider="target">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="139.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vwF-2H-AKq" userLabel="Content Stack View">
+                        <rect key="frame" x="24" y="11" width="327" height="118"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_001" translatesAutoresizingMaskIntoConstraints="NO" id="2rB-ew-rk0">
+                                <rect key="frame" x="0.0" y="0.0" width="327" height="118"/>
+                            </imageView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="vwF-2H-AKq" firstAttribute="leading" secondItem="wpM-wk-Liu" secondAttribute="leadingMargin" constant="8" id="AbF-eg-pXw"/>
+                    <constraint firstItem="vwF-2H-AKq" firstAttribute="top" secondItem="wpM-wk-Liu" secondAttribute="topMargin" id="J3L-LG-oDY"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="vwF-2H-AKq" secondAttribute="trailing" constant="8" id="SrU-x2-Qg2"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="vwF-2H-AKq" secondAttribute="bottom" id="VNJ-Fm-sZU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="-516" y="-143"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="img_001" width="2016" height="1512"/>
+    </resources>
+</document>

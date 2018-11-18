@@ -9,7 +9,7 @@ class MainViewController: UIViewController {
   let tableView = UITableView(frame: CGRect.zero, style: .plain)
   
   var contents: [String] = [];
-
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     

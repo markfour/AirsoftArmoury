@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		205A73EC21A19E6C00F4F3C8 /* MainPhotoTabelViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205A73EB21A19E6C00F4F3C8 /* MainPhotoTabelViewCell.swift */; };
+		205A73F421A1A00300F4F3C8 /* MainPhotoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 205A73F321A1A00300F4F3C8 /* MainPhotoTableViewCell.xib */; };
 		20D1BC872188194400CBDF5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D1BC862188194400CBDF5F /* AppDelegate.swift */; };
 		20D1BC892188194400CBDF5F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D1BC882188194400CBDF5F /* MainViewController.swift */; };
 		20D1BC8C2188194400CBDF5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20D1BC8A2188194400CBDF5F /* Main.storyboard */; };
@@ -26,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		205A73EB21A19E6C00F4F3C8 /* MainPhotoTabelViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPhotoTabelViewCell.swift; sourceTree = "<group>"; };
+		205A73F321A1A00300F4F3C8 /* MainPhotoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainPhotoTableViewCell.xib; sourceTree = "<group>"; };
 		20D1BC832188194400CBDF5F /* AirosftArmoury.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirosftArmoury.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20D1BC862188194400CBDF5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20D1BC882188194400CBDF5F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +87,8 @@
 				20D1BC8D2188194700CBDF5F /* Assets.xcassets */,
 				20D1BC8F2188194700CBDF5F /* LaunchScreen.storyboard */,
 				20D1BC922188194700CBDF5F /* Info.plist */,
+				205A73EB21A19E6C00F4F3C8 /* MainPhotoTabelViewCell.swift */,
+				205A73F321A1A00300F4F3C8 /* MainPhotoTableViewCell.xib */,
 			);
 			path = AirosftArmoury;
 			sourceTree = "<group>";
@@ -178,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20D1BC912188194700CBDF5F /* LaunchScreen.storyboard in Resources */,
+				205A73F421A1A00300F4F3C8 /* MainPhotoTableViewCell.xib in Resources */,
 				20D1BC8E2188194700CBDF5F /* Assets.xcassets in Resources */,
 				20D1BC8C2188194400CBDF5F /* Main.storyboard in Resources */,
 			);
@@ -197,6 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				205A73EC21A19E6C00F4F3C8 /* MainPhotoTabelViewCell.swift in Sources */,
 				20D1BC892188194400CBDF5F /* MainViewController.swift in Sources */,
 				20D1BC872188194400CBDF5F /* AppDelegate.swift in Sources */,
 			);
