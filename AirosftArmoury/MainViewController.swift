@@ -12,9 +12,11 @@ class MainViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-        
+    
     tableView.register(UINib(nibName: "MainPhotoTabelViewCell", bundle: nil),
                        forCellReuseIdentifier: "MainPhoto")
+    
+    contents = ["", "", "", ""]
   }
 }
 
@@ -29,11 +31,20 @@ extension MainViewController: UITableViewDataSource {
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: "MainPhoto", for: indexPath)
+      as! MainPhotoTabelViewCell
     return cell
   }
 }
 
 extension MainViewController: UITableViewDelegate {
+  func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    return UITableView.automaticDimension
+  }
+  
+  func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+    return UITableView.automaticDimension
+  }
+  
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     tableView.deselectRow(at: indexPath, animated: true)
   }
