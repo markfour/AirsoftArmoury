@@ -39,13 +39,13 @@ extension MainViewController: UITableViewDataSource {
 extension MainViewController: UITableViewDelegate {
   func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
     print("heightForRowAt")
-    return 140.0
+    return 140.0 + 38 + 8
     return UITableView.automaticDimension
   }
   
   func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
     print("estimatedHeightForRowAt")
-    return 140.0
+    return 140.0 + 38 + 8
     return UITableView.automaticDimension
   }
   
